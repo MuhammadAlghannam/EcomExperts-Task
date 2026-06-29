@@ -1,0 +1,343 @@
+{
+  "steps": [
+    {
+      "id": "cameras",
+      "step": 1,
+      "type": "products",
+      "title": "Choose your cameras",
+      "icon": "livestream",
+      "category": "Cameras",
+      "nextLabel": "Next: Choose your plan",
+      "products": [
+        {
+          "id": "cam-wyze-v4",
+          "title": "Wyze Cam v4",
+          "description": "The clearest Wyze Cam ever made.",
+          "learnMoreUrl": "#",
+          "image": "https://loremflickr.com/600/600/security-camera?lock=101",
+          "badge": "Save 22%",
+          "compareAtPrice": 35.98,
+          "price": 27.98,
+          "quantity": 0,
+          "defaultVariantId": "white",
+          "variants": [
+            {
+              "id": "white",
+              "name": "White",
+              "swatch": "https://loremflickr.com/120/120/security-camera,white?lock=1011",
+              "quantity": 0
+            },
+            {
+              "id": "grey",
+              "name": "Grey",
+              "swatch": "https://loremflickr.com/120/120/security-camera,grey?lock=1012",
+              "quantity": 0
+            },
+            {
+              "id": "black",
+              "name": "Black",
+              "swatch": "https://loremflickr.com/120/120/security-camera,black?lock=1013",
+              "quantity": 0
+            }
+          ]
+        },
+        {
+          "id": "cam-wyze-pan-v3",
+          "title": "Wyze Cam Pan v3",
+          "description": "360° pan and 180° tilt security camera.",
+          "learnMoreUrl": "#",
+          "image": "https://loremflickr.com/600/600/security-camera,ptz?lock=102",
+          "badge": "Save 12%",
+          "compareAtPrice": 39.98,
+          "price": 34.98,
+          "quantity": 0,
+          "defaultVariantId": "white",
+          "variants": [
+            {
+              "id": "white",
+              "name": "White",
+              "swatch": "https://loremflickr.com/120/120/security-camera,white?lock=1021",
+              "quantity": 0
+            },
+            {
+              "id": "black",
+              "name": "Black",
+              "swatch": "https://loremflickr.com/120/120/security-camera,black?lock=1022",
+              "quantity": 0
+            }
+          ]
+        },
+        {
+          "id": "cam-wyze-floodlight-v2",
+          "title": "Wyze Cam Floodlight v2",
+          "description": "2K floodlight camera with a 160° wide-angle view for your garage.",
+          "learnMoreUrl": "#",
+          "image": "https://loremflickr.com/600/600/floodlight,security?lock=103",
+          "badge": "Save 22%",
+          "compareAtPrice": 89.98,
+          "price": 69.98,
+          "quantity": 0,
+          "defaultVariantId": "white",
+          "variants": [
+            {
+              "id": "white",
+              "name": "White",
+              "swatch": "https://loremflickr.com/120/120/floodlight,white?lock=1031",
+              "quantity": 0
+            },
+            {
+              "id": "black",
+              "name": "Black",
+              "swatch": "https://loremflickr.com/120/120/floodlight,black?lock=1032",
+              "quantity": 0
+            }
+          ]
+        },
+        {
+          "id": "cam-wyze-duo-doorbell",
+          "title": "Wyze Duo Cam Doorbell",
+          "description": "Two cameras. Two views. Double the porch protection.",
+          "learnMoreUrl": "#",
+          "image": "https://loremflickr.com/600/600/video-doorbell?lock=104",
+          "badge": null,
+          "compareAtPrice": null,
+          "price": 69.98,
+          "quantity": 0,
+          "defaultVariantId": null,
+          "variants": []
+        },
+        {
+          "id": "cam-wyze-battery-pro",
+          "title": "Wyze Battery Cam Pro",
+          "description": "Protect anywhere. See everything in 2.5K HDR. No power outlet or electrician needed.",
+          "learnMoreUrl": "#",
+          "image": "https://loremflickr.com/600/600/security-camera,wireless?lock=105",
+          "badge": null,
+          "compareAtPrice": null,
+          "price": 89.98,
+          "quantity": 0,
+          "defaultVariantId": "white",
+          "variants": [
+            {
+              "id": "white",
+              "name": "White",
+              "swatch": "https://loremflickr.com/120/120/security-camera,white?lock=1051",
+              "quantity": 0
+            },
+            {
+              "id": "black",
+              "name": "Black",
+              "swatch": "https://loremflickr.com/120/120/security-camera,black?lock=1052",
+              "quantity": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "plan",
+      "step": 2,
+      "type": "plan",
+      "title": "Choose your plan",
+      "icon": "shield",
+      "category": "Plan",
+      "nextLabel": "Next: Choose your sensors",
+      "plans": [
+        {
+          "id": "plan-cam-plus",
+          "titlePrefix": "Cam",
+          "titleHighlight": "Plus",
+          "compareAtPrice": 2.99,
+          "price": 1.99,
+          "selected": false
+        },
+        {
+          "id": "plan-cam-unlimited",
+          "titlePrefix": "Cam",
+          "titleHighlight": "Unlimited",
+          "compareAtPrice": 12.99,
+          "price": 9.99,
+          "selected": false
+        }
+      ]
+    },
+    {
+      "id": "sensors",
+      "step": 3,
+      "type": "products",
+      "title": "Choose your sensors",
+      "icon": "sensor",
+      "category": "Sensors",
+      "nextLabel": "Next: Add extra protection",
+      "products": [
+        {
+          "id": "sensor-entry",
+          "title": "Entry Sensor",
+          "description": "Know the moment a door or window opens with instant alerts.",
+          "learnMoreUrl": "#",
+          "image": "https://loremflickr.com/600/600/door,sensor?lock=301",
+          "badge": "Save 15%",
+          "compareAtPrice": 19.99,
+          "price": 16.99,
+          "quantity": 0,
+          "defaultVariantId": "white",
+          "variants": [
+            {
+              "id": "white",
+              "name": "White",
+              "swatch": "https://loremflickr.com/120/120/door,sensor,white?lock=3011",
+              "quantity": 0
+            },
+            {
+              "id": "brown",
+              "name": "Brown",
+              "swatch": "https://loremflickr.com/120/120/door,sensor,brown?lock=3012",
+              "quantity": 0
+            }
+          ]
+        },
+        {
+          "id": "sensor-motion",
+          "title": "Motion Sensor",
+          "description": "Detects movement across rooms and triggers your rules.",
+          "learnMoreUrl": "#",
+          "image": "https://loremflickr.com/600/600/motion-sensor?lock=302",
+          "badge": null,
+          "compareAtPrice": null,
+          "price": 14.99,
+          "quantity": 0,
+          "defaultVariantId": null,
+          "variants": []
+        },
+        {
+          "id": "sensor-climate",
+          "title": "Climate Sensor",
+          "description": "Monitors temperature and humidity to keep your home safe.",
+          "learnMoreUrl": "#",
+          "image": "https://loremflickr.com/600/600/thermostat,sensor?lock=303",
+          "badge": null,
+          "compareAtPrice": null,
+          "price": 18.99,
+          "quantity": 0,
+          "defaultVariantId": null,
+          "variants": []
+        },
+        {
+          "id": "sensor-water-leak",
+          "title": "Water Leak Sensor",
+          "description": "Catch leaks early before they turn into expensive damage.",
+          "learnMoreUrl": "#",
+          "image": "https://loremflickr.com/600/600/water,sensor?lock=304",
+          "badge": "Save 10%",
+          "compareAtPrice": 21.99,
+          "price": 19.79,
+          "quantity": 0,
+          "defaultVariantId": null,
+          "variants": []
+        },
+        {
+          "id": "sensor-glass-break",
+          "title": "Glass Break Sensor",
+          "description": "Listens for the sound of breaking glass and alerts you instantly.",
+          "learnMoreUrl": "#",
+          "image": "https://loremflickr.com/600/600/window,glass,sensor?lock=305",
+          "badge": null,
+          "compareAtPrice": null,
+          "price": 24.99,
+          "quantity": 0,
+          "defaultVariantId": null,
+          "variants": []
+        }
+      ]
+    },
+    {
+      "id": "extra-protection",
+      "step": 4,
+      "type": "products",
+      "title": "Add extra protection",
+      "icon": "extra",
+      "category": "Accessories",
+      "nextLabel": "Review your system",
+      "products": [
+        {
+          "id": "extra-lock-bolt",
+          "title": "Wyze Lock Bolt",
+          "description": "Fingerprint smart lock that opens your door in under a second.",
+          "learnMoreUrl": "#",
+          "image": "https://loremflickr.com/600/600/smart-lock?lock=401",
+          "badge": "Save 18%",
+          "compareAtPrice": 79.99,
+          "price": 65.99,
+          "quantity": 0,
+          "defaultVariantId": "black",
+          "variants": [
+            {
+              "id": "black",
+              "name": "Black",
+              "swatch": "https://loremflickr.com/120/120/smart-lock,black?lock=4011",
+              "quantity": 0
+            },
+            {
+              "id": "silver",
+              "name": "Silver",
+              "swatch": "https://loremflickr.com/120/120/smart-lock,silver?lock=4012",
+              "quantity": 0
+            }
+          ]
+        },
+        {
+          "id": "extra-sense-hub",
+          "title": "Wyze Sense Hub",
+          "description": "The brain of your system that connects all sensors and sirens.",
+          "learnMoreUrl": "#",
+          "image": "https://loremflickr.com/600/600/smart-home,hub?lock=402",
+          "badge": null,
+          "compareAtPrice": null,
+          "price": 29.99,
+          "quantity": 0,
+          "defaultVariantId": null,
+          "variants": []
+        },
+        {
+          "id": "extra-keypad",
+          "title": "Wyze Keypad",
+          "description": "Arm and disarm your system with a simple PIN at the door.",
+          "learnMoreUrl": "#",
+          "image": "https://loremflickr.com/600/600/keypad,security?lock=403",
+          "badge": null,
+          "compareAtPrice": null,
+          "price": 24.99,
+          "quantity": 0,
+          "defaultVariantId": null,
+          "variants": []
+        },
+        {
+          "id": "extra-panic-button",
+          "title": "Panic Button",
+          "description": "One-touch emergency alert you can place anywhere in your home.",
+          "learnMoreUrl": "#",
+          "image": "https://loremflickr.com/600/600/emergency,button?lock=404",
+          "badge": "Save 25%",
+          "compareAtPrice": 15.99,
+          "price": 11.99,
+          "quantity": 0,
+          "defaultVariantId": null,
+          "variants": []
+        },
+        {
+          "id": "extra-solar-panel",
+          "title": "Solar Panel",
+          "description": "Keep your battery cameras charged with continuous solar power.",
+          "learnMoreUrl": "#",
+          "image": "https://loremflickr.com/600/600/solar-panel?lock=405",
+          "badge": null,
+          "compareAtPrice": null,
+          "price": 19.99,
+          "quantity": 0,
+          "defaultVariantId": null,
+          "variants": []
+        }
+      ]
+    }
+  ]
+}

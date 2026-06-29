@@ -1,0 +1,387 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+
+/* Gilroy */
+@font-face {
+  font-family: "Gilroy";
+  src: url("/fonts/Gilroy-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("/fonts/Gilroy-RegularItalic.woff2") format("woff2");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("/fonts/Gilroy-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("/fonts/Gilroy-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("/fonts/Gilroy-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* TT Norms Pro — Bold only */
+@font-face {
+  font-family: "TT Norms Pro";
+  src: url("/fonts/TTNormsPro-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@theme inline {
+  /* Border Radius System */
+  --radius: 0.625rem; /* 10px */
+  --radius-10: 0.625rem;
+  --radius-7: 0.4375rem;
+  --radius-5: 0.3125rem;
+  --radius-4: 0.25rem;
+  --radius-3: 0.1875rem;
+  --radius-2: 0.125rem;
+
+  --radius-sm: var(--radius-5);
+  --radius-md: var(--radius-7);
+  --radius-lg: var(--radius-10);
+
+  /* Colors */
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  /* Brand extensions */
+  --color-success: var(--success);
+  --color-red: var(--red);
+  --color-green: var(--green);
+  --color-bg-section: var(--bg-section);
+  --color-text-secondary: var(--text-secondary);
+  --color-text-dark: var(--text-dark);
+  --color-text-muted: var(--text-muted);
+  --color-gray-300: var(--gray-300);
+  --color-gray-400: var(--gray-400);
+  --color-gray-surface: var(--gray-surface);
+  --color-gray-600: var(--gray-600);
+  --color-gray-700: var(--gray-700);
+  --color-gray-500: var(--gray-500);
+  --color-black: var(--black);
+  --color-white: var(--white);
+  --color-learn-more: var(--learn-more);
+
+  /* Font families */
+  --font-gilroy: "Gilroy", sans-serif;
+  --font-tt-norms: "TT Norms Pro", sans-serif;
+  --font-sans: var(--font-gilroy);
+
+  /* Heading scale — Gilroy unless noted */
+
+  /* 32px */
+  --text-32-bold: 2rem;
+  --text-32-bold--font-weight: 700;
+  --text-32-bold--line-height: 2.2rem; /* 110% */
+  --text-32-bold--letter-spacing: -0.00375rem; /* -0.06px */
+
+  /* 24px */
+  --text-24-bold: 1.5rem;
+  --text-24-bold--font-weight: 700;
+  --text-24-bold--line-height: 2rem; /* 32px */
+  --text-24-bold--letter-spacing: -0.0013em; /* -0.13% */
+
+  /* 22px */
+  --text-22-semibold-wide: 1.375rem;
+  --text-22-semibold-wide--font-weight: 600;
+  --text-22-semibold-wide--line-height: 1.375rem; /* 100% */
+  --text-22-semibold-wide--letter-spacing: 0.0375rem; /* 0.6px */
+
+  /* 18px */
+  --text-18-semibold: 1.125rem;
+  --text-18-semibold--font-weight: 600;
+  --text-18-semibold--line-height: 1.5rem; /* 24px */
+
+  --text-18-medium: 1.125rem;
+  --text-18-medium--font-weight: 500;
+  --text-18-medium--line-height: 1.25rem; /* 20px */
+  --text-18-medium--letter-spacing: 0.0025em; /* 0.25% */
+
+  /* 17px — TT Norms Pro */
+  --text-17-paragraph: 1.0625rem;
+  --text-17-paragraph--font-family: var(--font-tt-norms);
+  --text-17-paragraph--font-weight: 700;
+  --text-17-paragraph--line-height: 1.0625rem; /* 100% */
+
+  /* 16px */
+  --text-16-semibold-wide: 1rem;
+  --text-16-semibold-wide--font-weight: 600;
+  --text-16-semibold-wide--line-height: 1rem; /* 100% */
+  --text-16-semibold-wide--letter-spacing: 0.0375rem; /* 0.6px */
+
+  --text-16-medium: 1rem;
+  --text-16-medium--font-weight: 500;
+  --text-16-medium--line-height: 1.25rem; /* 20px */
+
+  --text-16-regular-wide: 1rem;
+  --text-16-regular-wide--font-weight: 400;
+  --text-16-regular-wide--line-height: 1rem; /* 100% */
+  --text-16-regular-wide--letter-spacing: 0.0375rem; /* 0.6px */
+
+  --text-16-bold-tight: 1rem;
+  --text-16-bold-tight--font-weight: 700;
+  --text-16-bold-tight--line-height: 1rem; /* 100% */
+  --text-16-bold-tight--letter-spacing: -0.002em; /* -0.2% */
+
+  /* 14px */
+  --text-14-medium: 0.875rem;
+  --text-14-medium--font-weight: 500;
+  --text-14-medium--line-height: 1rem; /* 16px */
+
+  --text-14-semibold: 0.875rem;
+  --text-14-semibold--font-weight: 600;
+  --text-14-semibold--line-height: 1rem; /* 16px */
+
+  --text-14-regular-italic: 0.875rem;
+  --text-14-regular-italic--font-family: var(--font-gilroy);
+  --text-14-regular-italic--font-weight: 400;
+  --text-14-regular-italic--font-style: italic; /* Gilroy-RegularItalic.woff2 */
+  --text-14-regular-italic--line-height: 1.05rem; /* 120% */
+  --text-14-regular-italic--letter-spacing: -0.00125rem; /* -0.02px */
+
+  /* 12px */
+  --text-12-medium-wide: 0.75rem;
+  --text-12-medium-wide--font-weight: 500;
+  --text-12-medium-wide--line-height: 0.975rem; /* 130% */
+  --text-12-medium-wide--letter-spacing: 0.0375rem; /* 0.6px */
+
+  --text-12-semibold: 0.75rem;
+  --text-12-semibold--font-weight: 600;
+  --text-12-semibold--line-height: 0.75rem; /* 100% */
+
+  --text-12-regular-wide: 0.75rem;
+  --text-12-regular-wide--font-weight: 400;
+  --text-12-regular-wide--line-height: 1rem; /* 16px */
+  --text-12-regular-wide--letter-spacing: 0.03em; /* 3% */
+
+  --text-12-medium-condensed: 0.75rem;
+  --text-12-medium-condensed--font-weight: 500;
+  --text-12-medium-condensed--line-height: 0.75rem; /* 100% */
+  --text-12-medium-condensed--letter-spacing: -0.05em; /* -5% */
+
+  --text-12-semibold-tight: 0.75rem;
+  --text-12-semibold-tight--font-weight: 600;
+  --text-12-semibold-tight--line-height: 0.75rem; /* 100% */
+  --text-12-semibold-tight--letter-spacing: -0.00375rem; /* -0.06px */
+
+  /* 10px */
+  --text-10-medium: 0.625rem;
+  --text-10-medium--font-weight: 500;
+  --text-10-medium--line-height: 0.625rem; /* 100% */
+  --text-10-medium--letter-spacing: 0.0375rem; /* 0.6px */
+}
+
+:root {
+  --radius: 0.625rem;
+
+  --background: oklch(from #ffffff l c h); /* #FFFFFF */
+  --foreground: oklch(from #0b0d10 l c h); /* #0B0D10 — Obsidian */
+  --card: oklch(from #ffffff l c h); /* #FFFFFF */
+  --card-foreground: oklch(from #0b0d10 l c h); /* #0B0D10 — Obsidian */
+  --popover: oklch(from #ffffff l c h); /* #FFFFFF */
+  --popover-foreground: oklch(from #0b0d10 l c h); /* #0B0D10 — Obsidian */
+
+  --primary: oklch(from #4e2fd2 l c h); /* #4E2FD2 */
+  --primary-foreground: oklch(from #ffffff l c h); /* #FFFFFF */
+
+  --secondary: oklch(from #edf4ff l c h); /* #EDF4FF */
+  --secondary-foreground: oklch(from #0b0d10 l c h); /* #0B0D10 — Obsidian */
+
+  --muted: oklch(from #f0f4f7 l c h); /* #F0F4F7 */
+  --muted-foreground: oklch(from #575757 l c h); /* #575757 */
+
+  --accent: oklch(from #edf4ff l c h); /* #EDF4FF */
+  --accent-foreground: oklch(from #4e2fd2 l c h); /* #4E2FD2 */
+
+  --destructive: oklch(from #d8392b l c h); /* #D8392B */
+  --border: oklch(from #cccccc l c h); /* #CCCCCC */
+  --input: oklch(from #cccccc l c h); /* #CCCCCC */
+  --ring: oklch(from #4e2fd2 l c h); /* #4E2FD2 */
+
+  /* Brand extensions */
+  --success: oklch(from #0aa288 l c h); /* #0AA288 */
+  --red: oklch(from #d8392b l c h); /* #D8392B */
+  --green: oklch(from #0aa288 l c h); /* #0AA288 */
+  --bg-section: oklch(from #edf4ff l c h); /* #EDF4FF */
+  --text-secondary: oklch(from #484848 l c h); /* #484848 */
+  --text-dark: oklch(from #1f1f1f l c h); /* #1F1F1F */
+  --text-muted: oklch(from #575757 l c h); /* #575757 */
+  --gray-300: oklch(from #e6ebf0 l c h); /* #E6EBF0 — Gray-C/300 */
+  --gray-400: oklch(from #ced6de l c h); /* #CED6DE — Gray-C/400 */
+  --gray-surface: oklch(from #f0f4f7 l c h); /* #F0F4F7 */
+  --gray-600: oklch(from #6f7882 l c h); /* #6F7882 — Gray-C/600 */
+  --gray-700: oklch(from #525963 l c h); /* #525963 — Gray-C/700 */
+  --gray-500: oklch(from #a8b2bd l c h); /* #A8B2BD — Gray-C/500 */
+  --black: oklch(from #000000 l c h); /* #000000 */
+  --white: oklch(from #ffffff l c h); /* #FFFFFF */
+  --learn-more: oklch(from #0000ee l c h); /* #0000EE */
+}
+
+@layer base {
+  * {
+    @apply scroll-smooth;
+  }
+  body {
+    @apply bg-background font-gilroy;
+  }
+}
+
+@layer components {
+  .container-1440 {
+    @apply mx-auto w-full max-w-[1440px]  sm:px-6 lg:px-8;
+  }
+}
+
+@layer utilities {
+  /* Font families */
+  .font-gilroy {
+    font-family: var(--font-gilroy);
+  }
+
+  .font-tt-norms {
+    font-family: var(--font-tt-norms);
+    font-weight: 700; /* TTNormsPro-Bold.woff2 */
+  }
+
+  .font-gilroy-italic {
+    font-family: var(--font-gilroy);
+    font-weight: 400;
+    font-style: italic; /* Gilroy-RegularItalic.woff2 */
+  }
+
+  /* Responsive typography */
+
+  /* 22px → 18px on mobile */
+  .text-22-semibold {
+    font-family: var(--font-gilroy);
+    font-size: 1.375rem;
+    font-weight: 600;
+    line-height: 1.375rem;
+  }
+
+  /* 14px → 12px on mobile */
+  .text-14-medium-loose {
+    font-family: var(--font-gilroy);
+    font-size: 0.875rem;
+    font-weight: 500;
+    line-height: 1.1375rem; /* 130% */
+    letter-spacing: 0.0375rem; /* 0.6px */
+  }
+
+  .text-14-medium-snug {
+    font-family: var(--font-gilroy);
+    font-size: 0.875rem;
+    font-weight: 500;
+    line-height: 1rem;
+    letter-spacing: 0.005em; /* 0.5% */
+  }
+
+  .text-14-semibold-snug {
+    font-family: var(--font-gilroy);
+    font-size: 0.875rem;
+    font-weight: 600;
+    line-height: 1rem;
+    letter-spacing: 0.005em; /* 0.5% */
+  }
+
+  /* 12px → 10px on mobile */
+  .text-12-medium-caps {
+    font-family: var(--font-gilroy);
+    font-size: 0.75rem;
+    font-weight: 500;
+    line-height: 0.75rem;
+    letter-spacing: 0.1rem; /* 1.6px */
+  }
+
+  /* 17px paragraph — TT Norms Pro Bold with paragraph spacing */
+  .text-17-paragraph-block {
+    font-family: var(--font-tt-norms) !important;
+    font-size: 1.0625rem !important;
+    font-weight: 700 !important; /* TTNormsPro-Bold.woff2 */
+    line-height: 1.0625rem !important;
+  }
+
+  .text-17-paragraph-block:last-child {
+    margin-bottom: 0;
+  }
+
+  /* @theme doesn't emit font-style, so apply italic here */
+  .text-14-regular-italic {
+    font-style: italic;
+  }
+
+  @media (max-width: 639px) {
+    .text-22-semibold {
+      font-size: 1.125rem;
+      line-height: 1.125rem;
+    }
+
+    .text-14-medium-loose {
+      font-size: 0.75rem;
+      line-height: 0.975rem;
+    }
+
+    .text-14-medium-snug {
+      font-size: 0.75rem;
+    }
+
+    .text-14-semibold-snug {
+      font-size: 0.75rem;
+    }
+
+    .text-12-medium-caps {
+      font-size: 0.625rem;
+      letter-spacing: 0.0625rem; /* scale tracking with smaller size */
+    }
+  }
+
+  .flex-center {
+    @apply flex items-center justify-center;
+  }
+
+  .flex-between {
+    @apply flex items-center justify-between;
+  }
+}
